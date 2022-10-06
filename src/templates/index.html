@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Malapar App</title>
+    <!-- Meta tag -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000" />
+    <meta
+      name="description"
+      content="Temukan restaurant favorite untuk makan malam di Indonesia dengan mudah hanya di aplikasi Malapar alias Malam Lapar"
+    />
+    <!-- App Web Manifest -->
+    <link rel="manifest" href="./app.webmanifest" />
+    <link rel="icon" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#mainContent" class="skip-to-content">Skip to Content</a>
+    <header class="header">
+      <div class="header__inner">
+        <img src="./logo.png" class="header__img lazyload" alt="Malapar Logo" />
+        <h1 class="header__title">Malapar App</h1>
+      </div>
+      <button type="button" aria-label="Navigation Button" class="btn-nav">
+        <i data-feather="menu" class="btn-nav__icon"></i>
+      </button>
+      <nav id="drawer">
+        <nav-menu class="nav"></nav-menu>
+      </nav>
+      <hero-wrapper></hero-wrapper>
+    </header>
+    <main id="mainContent" tabindex="0" class="container"></main>
+    <footer class="footer-sign">
+      <div class="footer-sign__txt">
+        &copy; 2022. Made with &hearts; by. Malapar App
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": "standard",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": "off",
+    "no-undef": "off",
+    "eol-last": "off",
+    "accessor-pairs": "off",
+    "no-trailing-spaces": "off",
+    "prefer-promise-reject-errors": "off"
+  }
+}
