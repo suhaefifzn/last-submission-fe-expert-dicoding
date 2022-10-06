@@ -1,5 +1,5 @@
 const assert = require('assert');
-Feature('Liking Restaurant');
+Feature('Liking and Unliking Restaurant');
 
 Before(({ I }) => {
   I.amOnPage('/#/favorite');
@@ -62,5 +62,9 @@ Scenario('Unliking restaurant', async ({ I }) => {
   I.click('#likeButton');
 
   assert.strictEqual(firstLikedRestaurantName, unlikedRestaurantName);
+
+  I.amOnPage('/#/favorite');
+  I.waitForElement('.not__found');
+  I.see('Kamu belum memiliki daftar restaurant favorite.', '.not__found');
   pause();
 });

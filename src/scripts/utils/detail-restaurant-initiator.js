@@ -17,7 +17,7 @@ const DetailRestaurantInitiator = {
     const restaurantDescElement = document.querySelector('.detail-simple__body__desc .desc__p');
 
     restaurantNameElement.innerText = desc.name;
-    restaurantImgElement.setAttribute('src', `${CONFIG.MEDIUM_IMG_URL}/${desc.pictureId}`);
+    restaurantImgElement.setAttribute('data-src', `${CONFIG.MEDIUM_IMG_URL}/${desc.pictureId}`);
     restaurantImgElement.setAttribute('alt', `Image of Restaurant ${desc.name}`);
     restaurantImgElement.classList.add('lazyload');
     restaurantRatingElement.innerText = `${desc.rating}/5`;
