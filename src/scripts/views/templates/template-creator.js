@@ -36,7 +36,7 @@ const jumbotronHeroTemplate = () => {
   <div class='hero'>
       <picture>
         <source media='(max-width: 600px)' srcset='./heros/hero-image_3-small.jpg'/>
-        <img data-src='./heros/hero-image_3.jpg' alt='' class='hero__img lazyload' />
+        <img data-src='./heros/hero-image_3.jpg' alt='Cahaya-cahaya lampu di malam hari' class='hero__img lazyload' />
       </picture>
       <div class='hero__description'>
           <h2>Malapar Alias Malam Lapar</h2>
@@ -56,7 +56,7 @@ const restaurantItemTemplate = (restaurant) => {
             ${restaurant.city}
           </div>
           <img data-src='${CONFIG.SMALL_IMG_URL}/${restaurant.pictureId}' class='img__item lazyload'
-            alt='Image of Restaurant ${restaurant.name} from ${restaurant.city}'>
+            alt='Restaurant ${restaurant.name} from ${restaurant.city}'>
         </div>
         <div class='desc'>
           <div class='desc-rating' title='Rating'>
@@ -160,6 +160,7 @@ const formReviewTemplate = () => {
       <h3 class='form-review__heading'>Tambah Review</h3>
       <form id='formReview'>
         <input
+          aria-label='Masukkan nama'
           type='text'
           name='customer_name' 
           class='form-review__customer__name'
@@ -167,6 +168,7 @@ const formReviewTemplate = () => {
           required
         />
         <textarea
+          aria-label='Masukkan review'
           rows='20'
           name='customer__review'
           class='form-review__customer__review'
