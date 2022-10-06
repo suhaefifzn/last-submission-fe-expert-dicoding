@@ -36,7 +36,7 @@ const jumbotronHeroTemplate = () => {
   <div class='hero'>
       <picture>
         <source media='(max-width: 600px)' srcset='./heros/hero-image_3-small.jpg'/>
-        <img src='./heros/hero-image_3.jpg' alt='' class='hero__img lazyload' />
+        <img data-src='./heros/hero-image_3.jpg' alt='' class='hero__img lazyload' />
       </picture>
       <div class='hero__description'>
           <h2>Malapar Alias Malam Lapar</h2>
@@ -55,7 +55,7 @@ const restaurantItemTemplate = (restaurant) => {
           <div class='img__location' title='Location'>
             ${restaurant.city}
           </div>
-          <img src='${CONFIG.SMALL_IMG_URL}/${restaurant.pictureId}' class='img__item lazyload'
+          <img data-src='${CONFIG.SMALL_IMG_URL}/${restaurant.pictureId}' class='img__item lazyload'
             alt='Image of Restaurant ${restaurant.name} from ${restaurant.city}'>
         </div>
         <div class='desc'>
@@ -189,7 +189,7 @@ const likeRestaurantButtonTemplate = () => {
   return `
     <button class='like' id='likeButton' aria-label='Add this Restaurant to Favorite List'>
       <div class='like__icon'>
-        <img src='./heart-o.png' alt='Favorite Button Icon' class='lazyload'/>
+        <img src='./heart-o.png' alt='Favorite Button Icon'/>
       </div>
     </button>
   `;
@@ -199,7 +199,7 @@ const unlikeRestaurantButtonTemplate = () => {
   return `
     <button class='like' id='likeButton' aria-label='Remove this Restaurant from Favorite List'>
       <div class='like__icon'>
-        <img src='./heart.png' alt='Favorite Button Icon' class='lazyload'/>
+        <img src='./heart.png' alt='Favorite Button Icon'/>
       </div>
     </button>
   `;
